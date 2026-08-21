@@ -1,0 +1,2 @@
+@extends('layout')
+@section('content')<h1>Dashboard SISABAR</h1><div class="stats"><div class="stat"><b>Total Barang</b><h2>{{ $barang }}</h2></div><div class="stat"><b>Total Stok</b><h2>{{ $stok }}</h2></div><div class="stat"><b>Stok Menipis</b><h2>{{ $menipis }}</h2></div><div class="stat"><b>Kategori</b><h2>{{ $kategori }}</h2></div><div class="stat"><b>Satuan</b><h2>{{ $satuan }}</h2></div></div>@endsection
