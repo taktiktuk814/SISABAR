@@ -1,0 +1,2 @@
+@extends('layout')
+@section('content')<div class="card"><h1>{{ $item->exists ? 'Edit' : 'Tambah' }} Satuan</h1><form method="POST" action="{{ $item->exists ? route('satuan.update',$item) : route('satuan.store') }}">@csrf @if($item->exists)@method('PUT')@endif<label>Kode</label><input name="kode" value="{{ old('kode',$item->kode) }}" required><label>Nama Satuan</label><input name="nama" value="{{ old('nama',$item->nama) }}" required><button class="btn">Simpan</button></form></div>@endsection
